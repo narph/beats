@@ -17,6 +17,8 @@ This file is generated! See scripts/docs_collector.py
 |<<metricbeat-metricset-ceph-osd_df,osd_df>> experimental[]  
 |<<metricbeat-metricset-ceph-osd_tree,osd_tree>> beta[]  
 |<<metricbeat-metricset-ceph-pool_disk,pool_disk>> beta[]  
+|<<metricbeat-module-cockroachdb,cockroachdb>>  experimental[]   |image:./images/icon-no.png[No prebuilt dashboards]    |  
+.1+| .1+|  |<<metricbeat-metricset-cockroachdb-logs,logs>> experimental[]  
 |<<metricbeat-module-couchbase,Couchbase>>  beta[]   |image:./images/icon-no.png[No prebuilt dashboards]    |  
 .3+| .3+|  |<<metricbeat-metricset-couchbase-bucket,bucket>> beta[]  
 |<<metricbeat-metricset-couchbase-cluster,cluster>> beta[]  
@@ -156,6 +158,7 @@ This file is generated! See scripts/docs_collector.py
 include::modules/aerospike.asciidoc[]
 include::modules/apache.asciidoc[]
 include::modules/ceph.asciidoc[]
+include::modules/cockroachdb.asciidoc[]
 include::modules/couchbase.asciidoc[]
 include::modules/docker.asciidoc[]
 include::modules/dropwizard.asciidoc[]

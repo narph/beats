@@ -17,6 +17,7 @@ grouped in the following categories:
 * <<exported-fields-beat>>
 * <<exported-fields-ceph>>
 * <<exported-fields-cloud>>
+* <<exported-fields-cockroachdb>>
 * <<exported-fields-common>>
 * <<exported-fields-couchbase>>
 * <<exported-fields-docker-processor>>
@@ -1781,6 +1782,37 @@ Name of the project in Google Cloud.
 +
 --
 Region in which this host is running.
+
+
+--
+
+[[exported-fields-cockroachdb]]
+== cockroachdb fields
+
+experimental[]
+cockroachdb module
+
+
+
+[float]
+== cockroachdb fields
+
+
+
+
+[float]
+== logs fields
+
+logs
+
+
+
+*`cockroachdb.logs.example`*::
++
+--
+type: keyword
+
+Example field
 
 
 --

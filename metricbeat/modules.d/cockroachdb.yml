@@ -1,0 +1,10 @@
+# Module: cockroachdb
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-cockroachdb.html
+
+- module: cockroachdb
+  metricsets: ["logs"]
+  enabled: true
+  period: 10s
+  hosts: ["localhost:8080","localhost:8081"]
+  path: "_status/logs/local"
+

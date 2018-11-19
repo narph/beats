@@ -1,0 +1,40 @@
+////
+This file is generated! See scripts/docs_collector.py
+////
+
+[[metricbeat-module-cockroachdb]]
+== cockroachdb module
+
+experimental[]
+
+This is the cockroachdb module.
+
+
+
+[float]
+=== Example configuration
+
+The cockroachdb module supports the standard configuration options that are described
+in <<configuration-metricbeat>>. Here is an example configuration:
+
+[source,yaml]
+----
+metricbeat.modules:
+- module: cockroachdb
+  metricsets: ["logs"]
+  enabled: true
+  period: 10s
+  hosts: ["localhost:8080","localhost:8081"]
+  path: "_status/logs/local"
+
+----
+
+[float]
+=== Metricsets
+
+The following metricsets are available:
+
+* <<metricbeat-metricset-cockroachdb-logs,logs>>
+
+include::cockroachdb/logs.asciidoc[]
+

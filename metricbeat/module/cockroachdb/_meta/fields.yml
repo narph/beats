@@ -1,0 +1,11 @@
+- key: cockroachdb
+  title: "cockroachdb"
+  description: >
+    experimental[]
+
+    cockroachdb module
+  fields:
+    - name: cockroachdb
+      type: group
+      description: >
+      fields:

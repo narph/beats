@@ -153,6 +153,15 @@ metricbeat.modules:
   hosts: ["localhost:5000"]
   enabled: true
 
+#----------------------------- cockroachdb Module ----------------------------
+- module: cockroachdb
+  metricsets: ["logs"]
+  enabled: true
+  period: 10s
+  hosts: ["localhost:8080","localhost:8081"]
+  path: "_status/logs/local"
+
+
 #------------------------------ Couchbase Module -----------------------------
 - module: couchbase
   metricsets: ["bucket", "cluster", "node"]
